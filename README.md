@@ -5,7 +5,8 @@
 - pip install matplotlib
 - pip install sklearn
 - pip install h5py
-
+# ImageNet2012 val解压脚本
+- valprep.sh
 
 
 
