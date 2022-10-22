@@ -7,7 +7,7 @@
 - pip install h5py
 # ImageNet2012 val解压脚本
 - valprep.sh  解压val 数据集
-- zip.sh 防在train下，解压train 数据集
+- for x in `ls train/*tar`; do fn=train/`basename $x .tar`; mkdir $fn; tar -xvf $x -C $fn; rm -f $fn.tar; done 解压所有train
 
 
 
