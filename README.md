@@ -29,3 +29,10 @@ RuntimeError: view size is not compatible with input tensor's size and stride (a
             correct_k = correct[:k].contiguous().view(-1).float().sum(0, keepdim=True)
             
             # correct_k = correct[:k].view(-1).float().sum(0, keepdim=True)
+
+
+## 查看进程
+
+  pgrep -af 'python.*nn.py' | wc -l
+
+通过dataloader 的 num_workers=72 就会创建72个pid
